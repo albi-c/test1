@@ -53,5 +53,4 @@ def execute(path):
 			raise ValueError("Unknown command")
 		i += 1
 
-execute("./Documents/test.pye")
-
+#execute("myfile")
