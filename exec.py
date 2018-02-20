@@ -2,6 +2,12 @@
 
 from time import sleep
 
+def get(q):
+	try:
+		return input(q)
+	except:
+		return raw_input(q)
+
 def execute(path):
 	lvars = {}
 	lints = {}
@@ -53,4 +59,5 @@ def execute(path):
 			raise ValueError("Unknown command")
 		i += 1
 
-#execute("myfile")
+if __name__ == "__main__":
+	execute("filename")
